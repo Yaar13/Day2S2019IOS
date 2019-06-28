@@ -10,11 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lblMessage: UILabel!
+    
+    @IBOutlet weak var btnMessage: UIButton!
     override func viewDidLoad() {
+    
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
 
-}
+    @IBAction func edtMessage(_ sender: Any) {
+    }
+    
+    @IBAction func btnsubmitclick(_ sender: Any) {
+        
+        self.lblMessage.text = "WELCOME TO IOS PROGRAMMING"
+    }
 
+
+    
+}
